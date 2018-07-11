@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>On-Click Event</title>
+        <script>
+            function arithmatic(x){
+                var a = parseInt(document.myForm.i1.value);
+                var b = parseInt(document.myForm.i2.value);
+                var r = document.myForm.res;
+                if(x.value=="Add"){
+                    r.value = a+b;
+                }
+                else if(x.value=="Sub"){
+                    r.value = a-b;
+                }
+                else if(x.value=="Mul"){
+                    r.value = a*b;
+                }
+                else if(x.value=="Div"){
+                    r.value = a/b;
+                }
+                else{
+                    r.value = a%b;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myForm">
+            Number 1: <input type="text" name="i1">
+            Number 2 : <input type="text" name="i2">
+            Result : <input type="text" name="res">
+            <input type="button" value="Add" onclick="arithmatic(this)">
+            <input type="button" value="Sub" onclick="arithmatic(this)">
+            <input type="button" value="Mul" onclick="arithmatic(this)">
+            <input type="button" value="Div" onclick="arithmatic(this)">
+            <input type="button" value="Mod" onclick="arithmatic(this)">
+        </form>
+    </body>
+</html>

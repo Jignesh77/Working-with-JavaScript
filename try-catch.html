@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Error Handling with try catch block</title>
+        <script>
+            function jk(){
+                try{
+                    var x = document.getElementById("in").value;
+                    if(x=="") throw "Empty";
+                    else if(isNaN(x)) throw "Not a number";
+                    else if(x<3) throw "Too low";
+                    else if(x>6) throw "too high";
+                    else if(x>3 && x<6) throw "Perfect";
+                }
+                catch(err){
+                        document.getElementById("er").innerHTML=err;
+                    }
+            }   
+        </script>
+    </head>
+    <body>
+        <p>3-6</p>
+        <input type="text" id="in">
+        <b id="er" ></b><br>
+        <input type="button" value="Test Input" onclick="jk()">
+    </body>
+</html>

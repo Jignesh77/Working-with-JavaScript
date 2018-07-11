@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Compare and then sort</title>
+    </head>
+    <body>
+        <script>
+            var a = [1,87,47,73,53,657,54,3254,55,477,90];
+            document.write(a+"<br>");
+            a.sort(function(x,y){
+                //return x-y; Ascending
+                return y-x;//Descending
+            })
+             document.write(a+"<br>");
+        </script>
+    </body>
+</html>

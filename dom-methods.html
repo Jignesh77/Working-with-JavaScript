@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>DOM Methods</title>
+    </head>
+    <body>
+        <script>
+            function jk(){
+//                var x = document.getElementById("in1").value;
+//                var x = document.getElementsByTagName("input").length;
+                var x = document.getElementsByClassName("demo").length;
+                alert(x);
+            }
+        </script>
+        <input type="text" name="User" id="in1" class="demo">
+        <input type="button" class="demo" value="Get value" onclick="jk()">
+        <p>To find the form field value always prefer id(Unique) attribute, supppose if we try some id="user" multiple times the it targets only first loaded id="user" element </p>
+        <p>Suppose we are trying to find value by using class or tag then, the result is undefined becuase there is no uniqueness to them but id is always unique</p>
+    </body>
+</html>

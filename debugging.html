@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Debugging</title>
+        <script>
+            function jk(){
+                window.print();
+                debugger;
+                window.print(;
+                debugger;
+                window.printme();
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Printme" onclick="jk()">
+        <p>Syntax Errors -> Errors that occurs whenever the page is loaded</p>
+        <p>Runtime Errors -> Errors that occurs at the time of running orexecuting the functionality</p>
+    </body>
+</html>

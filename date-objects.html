@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Date Objects</title>
+    </head>
+    <body>
+        <script>
+            var d = new Date();
+            document.write(d+"<br>");
+            var day = ["Sun","Mon","Tue","Wed","Thur","Fri","Sat"];
+            var mon = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sept","Oct","Nov","Dec"];
+            document.write(day[d.getDay()]+" "+mon[d.getMonth()]+" "+d.getDate()+" "+d.getFullYear()+" "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds())
+        </script>
+    </body>
+</html>

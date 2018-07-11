@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>OnKeypress,onKeyup and OnKeydown Event</title>
+        <script>
+            function jk(x){
+                x.style.backgroundColor = "red";
+                x.style.color = "yellow";
+            }
+            function mj(x){
+                x.style.backgroundColor = "yellow";
+                x.style.color = "red";
+            }
+            function reset(x){
+                x.style.backgroundColor = "white";
+                x.style.color = "black";
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" onKeyup="jk(this)" onKeydown="mj(this)">
+        <input type="text" onkeypress="jk(this)" onblur="reset(this)">
+    </body>
+</html>

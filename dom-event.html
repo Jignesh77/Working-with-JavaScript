@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>DOM Events and Event Listners</title>
+    </head>
+    <body>
+        <script>
+            function jk(){
+                document.getElementById("x").addEventListener("click",mj);            
+        }
+            window.addEventListener("load",jk);
+            function mj()
+            {
+                alert("Events and Event Listners");
+            }
+        </script>
+        <input type="button" value="callFunction" onclick="mj()">
+        <input type="button" value="callfunction2" id="x">
+    </body>
+</html>

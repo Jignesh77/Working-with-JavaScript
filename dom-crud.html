@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>CRUD Operations on node using Dom</title>
+    </head>
+    <body>
+        <script>
+             
+            function del(){
+                 var parent = document.getElementById("div1");
+                 var child = document.getElementById("p2");
+                 parent.removeChild(child);
+            }
+            function create(){
+                var parent = document.getElementById("div1");
+                var child = document.getElementById("p2");
+                var n  = document.createElement("b");
+                var t = document.createTextNode("This is new one <br>");
+                n.append(t);
+                parent.appendChild(n);
+            }
+            function replace(){
+                var parent = document.getElementById("div1");
+                var child = document.getElementById("p2");
+                var n  = document.createElement("i");
+                var t = document.createTextNode("This is new one");
+                n.append(t);
+                n.id = "p2";
+                parent.replaceChild(n,child);
+            }            
+        </script>
+        <div id="div1">
+            <p id="p1">This is Child 1</p>
+            <p id="p2">This is Child 2</p>
+        </div>
+            <input type="button" onclick="create()" value="Create">
+            <input type="button" onclick="replace()" value="Replace">
+            <input type="button" onclick="del()" value="Delete">
+       
+    </body>
+</html>

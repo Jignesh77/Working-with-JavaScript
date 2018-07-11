@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Objects in JavaScript</title>
+    </head>
+    <body>
+        <script>
+            var person = new Object();
+            person.firstName = "Jignesh";
+            person.lastName = "Kukreja";
+            person.Age = 24;
+            document.write(person.firstName+"<br>"+person.lastName+"<br>"+person.Age);
+            //Alternate option to create an object
+            var obj = {frstName:"Jonty",lstName:"Agrawal",Ag:"22"}
+            document.write("<br>"+obj.frstName+"<br>"+obj.lstName+"<br>"+obj.Ag);
+            //Constructor based object creation
+            function human(x,y,z){
+                this.fname =x;
+                this.lname =y;
+                this.age = z;
+                //Adding methods to an object
+                this.changeName =function(d){
+                    this.lname = d;
+                };
+            }
+            var a = new human("Mayu","Deore",20);
+            document.write("<br>"+a.fname+"<br>"+a.lname+"<br>"+a.age);
+            a.changeName("Kukreja");
+            document.write("<br>"+a.fname+"<br>"+a.lname+"<br>"+a.age);
+        </script>
+    </body>
+</html>

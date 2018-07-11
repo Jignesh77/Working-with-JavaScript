@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>On-Change Event</title>
+        <script>
+            function jk(x){
+                document.body.style.backgroundColor = x.value;
+            }
+        </script>
+    </head>
+    <body>
+        <select onchange="jk(this)">
+            <option value="">Select Any 1 Color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+    </body>

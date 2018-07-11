@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>OnFocus and OnBlur Event</title>
+        <script>
+            function jk(x){
+                x.style.backgroundColor = "red";
+                x.style.color = "yellow";
+            }
+            function mj(x){
+                x.style.backgroundColor = "yellow";
+                x.style.color = "red";
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" onfocus="jk(this)" onblur="mj(this)">
+    </body>
+</html>

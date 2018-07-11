@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>On-Change Event</title>
+        <script>
+            function jk(x){
+                document.body.style.backgroundImage = "url("+x.value+")";
+            }
+        </script>
+    </head>
+    <body>
+        <select onchange="jk(this)">
+            <option value="">Select Any 1 Color</option>
+            <option value="images/s2.jpg">Red</option>
+            <option value="images/s3.jpg">Blue</option>
+            <option value="images/s4.jpg">Green</option>
+        </select>
+    </body>
